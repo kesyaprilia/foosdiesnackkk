@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">E-Commerce</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="product">Choose Product:</label>
+                <select id="product" name="product">
+                    <option value="product1">Product 1 - IDR 100,000</option>
+                    <option value="product2">Product 2 - IDR 150,000</option>
+                    <option value="product3">Product 3 - IDR 200,000</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Store | Designed with ❤ by Your Company</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
